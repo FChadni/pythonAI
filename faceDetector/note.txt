@@ -1,0 +1,12 @@
+what is haar cascade?
+
+What is Haar feature?
+    looks for dark and light, not facial feature (black and white)
+        Edge feature
+        Line feature
+        Four rectangles feature
+
+How opencv trained Faces?
+    traning data in machine learing are positive and negative images
+    supervised machine learning: human supervising the actual data to machine
+    unsupervised machine learning:
