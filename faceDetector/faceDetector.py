@@ -2,7 +2,7 @@ import cv2
 from random import randrange
 
 # importing the pre-trained data on face frontals from opencv
-front_face_data = cv2.CascadeClassifier("faceDetector/haarcascade_frontalface_default.xml")
+front_face_data = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 
 # # use the image read funtion from opencv to detect faces in image
@@ -44,10 +44,10 @@ while True:
                       (randrange(256), randrange(256), randrange(256)), 3)
     cv2.imshow('webcam', frame)
     # 1 becasue it detects real time
-    cv2.waitKey(1)
+    key = cv2.waitKey(1)
     # stop program if Q pressed
-    # if key == 81 or key == 113:
-    #     break
+    if key == 81 or key == 113:
+        break
 # Relsase the video capture object
 # webcam.relase()
 
